@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Направления — TROPICA | Мальдивы, Бали, Таиланд, Сейшелы</title>
+<meta name="description" content="Тропические направления с фильтрами по типу отдыха и сезону: Мальдивы, Бали, Таиланд, Сейшелы, Раджа-Ампат, Доминикана. Концепт для портфолио.">
+<link rel="stylesheet" href="assets/fonts.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230e8388'/><text x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>T</text></svg>">
+</head>
+<body>
+
+<header class="header">
+  <div class="container header__in">
+    <a class="logo" href="index.html">
+      <span class="logo__mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4 0-7-3.5-7-8 4.5 0 7 2 7 2s2.5-2 7-2c0 4.5-3 8-7 8Z"/><path d="M12 15V6"/><path d="M12 6c-2-2.5-5-3-7-2 0 2.5 2 5 5 5M12 6c2-2.5 5-3 7-2 0 2.5-2 5-5 5"/></svg></span>
+      <span>TROPICA<small>travel concept</small></span>
+    </a>
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="index.html">Главная</a>
+      <a href="directions.html" class="active">Направления</a>
+      <a href="tour.html">Путешествие месяца</a>
+      <a href="about.html">О проекте</a>
+    </nav>
+    <div class="header__cta">
+      <a class="btn btn--sun btn--sm" href="about.html#booking">Выбрать путешествие</a>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h10"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img class="bg" src="assets/img/maldives-aerial.jpg" alt="" aria-hidden="true">
+  <div class="container">
+    <nav class="crumbs" aria-label="Хлебные крошки"><a href="index.html">Главная</a><span>/</span><span>Направления</span></nav>
+    <h1>Куда летим за <span class="serif">солнцем?</span></h1>
+    <p>Подберите направление под тип отдыха и сезон вашего отпуска. Цены — ориентир «от» на человека, финальная смета собирается под ваши даты.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <!-- Фильтры -->
+    <div class="filters reveal">
+      <div class="filters__row" data-group="type">
+        <span class="filters__label">Тип отдыха</span>
+        <button class="chip active" data-value="all">Любой</button>
+        <button class="chip" data-value="beach">Пляжный</button>
+        <button class="chip" data-value="active">Активный</button>
+        <button class="chip" data-value="culture">Культура</button>
+        <button class="chip" data-value="family">Семьёй</button>
+        <button class="chip" data-value="romantic">Вдвоём</button>
+      </div>
+      <div class="filters__row" data-group="season">
+        <span class="filters__label">Сезон поездки</span>
+        <button class="chip active" data-value="all">Любой</button>
+        <button class="chip" data-value="winter">Зима</button>
+        <button class="chip" data-value="spring">Весна</button>
+        <button class="chip" data-value="summer">Лето</button>
+        <button class="chip" data-value="autumn">Осень</button>
+      </div>
+    </div>
+
+    <div class="cards" id="cards">
+      <article class="card reveal" data-type="beach romantic" data-season="winter spring autumn">
+        <div class="card__img">
+          <img src="assets/img/maldives-aerial.jpg" alt="Виллы над водой на Мальдивах" loading="lazy">
+          <div class="card__tags"><span class="tag tag--sun">Хит продаж</span><span class="tag">Вдвоём</span></div>
+          <div class="card__price"><small>от</small>189 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Индийский океан</span>
+          <h3>Мальдивы</h3>
+          <p>Остров-отель, вилла над лагуной и домашний риф с черепахами. Максимум тишины и океана.</p>
+          <div class="card__meta"><span>7–10 дней</span><span>Лучший сезон: ноя — апр</span></div>
+          <a class="card__link" href="tour.html">Программа путешествия <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-type="culture active" data-season="spring summer autumn">
+        <div class="card__img">
+          <img src="assets/img/bali-tanah-lot.jpg" alt="Храм Танах-Лот на Бали на закате" loading="lazy">
+          <div class="card__tags"><span class="tag">Культура</span><span class="tag">Активный</span></div>
+          <div class="card__price"><small>от</small>134 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Индонезия</span>
+          <h3>Бали</h3>
+          <p>Храмы, рисовые террасы, водопады, вулкан на рассвете и сёрф. Каждый день — новый остров внутри острова.</p>
+          <div class="card__meta"><span>10–14 дней</span><span>Лучший сезон: апр — окт</span></div>
+          <a class="card__link" href="about.html#booking">Запросить маршрут <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-type="beach family active" data-season="winter spring">
+        <div class="card__img">
+          <img src="assets/img/thailand-krabi.jpg" alt="Лодки лонгтейл у известняковых скал, Краби, Таиланд" loading="lazy">
+          <div class="card__tags"><span class="tag">Острова</span><span class="tag">Семьёй</span></div>
+          <div class="card__price"><small>от</small>98 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Таиланд</span>
+          <h3>Краби и острова</h3>
+          <p>Лагуны Пхи-Пхи, снорклинг, ночные рынки и массаж на берегу. Яркие тропики по честной цене.</p>
+          <div class="card__meta"><span>9–12 дней</span><span>Лучший сезон: ноя — март</span></div>
+          <a class="card__link" href="about.html#booking">Запросить маршрут <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-type="beach romantic" data-season="spring autumn">
+        <div class="card__img">
+          <img src="assets/img/seychelles-bay.jpg" alt="Бухта с гранитными валунами и бирюзовой водой на Сейшелах, вид сверху" loading="lazy">
+          <div class="card__tags"><span class="tag">Природа</span><span class="tag">Вдвоём</span></div>
+          <div class="card__price"><small>от</small>215 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Индийский океан</span>
+          <h3>Сейшелы</h3>
+          <p>Гранитные валуны, гигантские черепахи и пляжи с открыток. Дикая природа и полное уединение.</p>
+          <div class="card__meta"><span>8–11 дней</span><span>Лучший сезон: апр — май, сен — окт</span></div>
+          <a class="card__link" href="about.html#booking">Запросить маршрут <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-type="active" data-season="winter autumn spring">
+        <div class="card__img">
+          <img src="assets/img/raja-ampat.jpg" alt="Острова Раджа-Ампат в Индонезии, вид с высоты" loading="lazy">
+          <div class="card__tags"><span class="tag tag--sun">Для дайверов</span><span class="tag">Экспедиция</span></div>
+          <div class="card__price"><small>от</small>268 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Индонезия</span>
+          <h3>Раджа-Ампат</h3>
+          <p>Самое богатое море планеты: манты, коралловые сады и острова без туристов. Путешествие-экспедиция.</p>
+          <div class="card__meta"><span>11–14 дней</span><span>Лучший сезон: окт — апр</span></div>
+          <a class="card__link" href="about.html#booking">Запросить маршрут <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+
+      <article class="card reveal" data-type="beach family" data-season="winter spring">
+        <div class="card__img">
+          <img src="assets/img/caribbean-beach.jpg" alt="Белоснежный пляж с пальмой в Карибском море" loading="lazy">
+          <div class="card__tags"><span class="tag">Пляжный</span><span class="tag">Семьёй</span></div>
+          <div class="card__price"><small>от</small>156 000 ₽</div>
+        </div>
+        <div class="card__body">
+          <span class="card__country">Карибское море</span>
+          <h3>Доминикана</h3>
+          <p>Километры белого песка, тёплое море круглый год и киты в заливе Самана зимой. Лёгкий отдых без забот.</p>
+          <div class="card__meta"><span>10–12 дней</span><span>Лучший сезон: дек — апр</span></div>
+          <a class="card__link" href="about.html#booking">Запросить маршрут <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="filters__empty">
+      <h3 style="margin-bottom:10px">Под эту комбинацию готового маршрута нет</h3>
+      <p>Но это тропики — соберём индивидуальный. Напишите нам даты и пожелания.</p>
+      <p style="margin-top:20px"><a class="btn btn--primary" href="about.html#booking">Собрать мой маршрут</a></p>
+    </div>
+
+    <p style="margin-top:26px;font-size:13.5px;color:var(--muted)">Цены на странице — демонстрационные ориентиры для портфолио-концепта и не являются публичной офертой.</p>
+  </div>
+</section>
+
+<!-- Сезонность -->
+<section class="section--soft">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Календарь сезонов</span>
+      <h2>Куда лететь <span class="serif">в ваш месяц</span></h2>
+      <p class="lead">В тропиках нет «плохого времени» — есть неподходящее направление. Сверьтесь с таблицей или просто спросите нас.</p>
+    </div>
+    <div class="season reveal">
+      <div class="table-scroll">
+        <table aria-label="Таблица сезонности тропических направлений">
+          <thead>
+            <tr><th>Направление</th><th>Янв</th><th>Фев</th><th>Мар</th><th>Апр</th><th>Май</th><th>Июн</th><th>Июл</th><th>Авг</th><th>Сен</th><th>Окт</th><th>Ноя</th><th>Дек</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Мальдивы</td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td></tr>
+            <tr><td>Бали</td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--low"></span></td></tr>
+            <tr><td>Таиланд (Краби)</td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td></tr>
+            <tr><td>Сейшелы</td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td></tr>
+            <tr><td>Доминикана</td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--best"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--low"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--good"></span></td><td><span class="dot dot--best"></span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="season__legend">
+        <span><span class="dot dot--best"></span>Лучшее время</span>
+        <span><span class="dot dot--good"></span>Хорошо, возможны нюансы</span>
+        <span><span class="dot dot--low"></span>Сезон дождей / ветров</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section>
+  <div class="container">
+    <div class="cta reveal">
+      <img class="bg" src="assets/img/resort-pool.jpg" alt="Курорт у океана с пальмами" loading="lazy">
+      <div class="cta__in">
+        <h2>Не нашли <span class="serif">своё?</span></h2>
+        <p>Соберём маршрут с нуля: другая страна, необычные даты или путешествие мечты под событие.</p>
+        <a class="btn btn--sun" href="about.html#booking">Обсудить идею
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html"><span class="logo__mark"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 21c-4 0-7-3.5-7-8 4.5 0 7 2 7 2s2.5-2 7-2c0 4.5-3 8-7 8Z"/><path d="M12 15V6"/><path d="M12 6c-2-2.5-5-3-7-2 0 2.5 2 5 5 5M12 6c2-2.5 5-3 7-2 0 2.5-2 5-5 5"/></svg></span><span>TROPICA<small>travel concept</small></span></a>
+        <p>Концепт сайта авторских путешествий в тропики. Создан для демонстрации в портфолио веб-разработчика.</p>
+      </div>
+      <div><h4>Навигация</h4><ul><li><a href="index.html">Главная</a></li><li><a href="directions.html">Направления</a></li><li><a href="tour.html">Путешествие месяца</a></li><li><a href="about.html">О проекте и контакты</a></li></ul></div>
+      <div><h4>Направления</h4><ul><li><a href="tour.html">Мальдивы</a></li><li><a href="directions.html">Бали</a></li><li><a href="directions.html">Таиланд</a></li><li><a href="directions.html">Сейшелы</a></li></ul></div>
+      <div><h4>Контакты</h4><ul><li><a href="about.html#booking">Оставить заявку</a></li><li><a href="mailto:hello@example.com">hello@example.com</a></li><li>Ежедневно 9:00–21:00 (демо)</li></ul></div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span class="js-year">2026</span> TROPICA — демонстрационный проект для портфолио. Не является туроператором, заявки не обрабатываются.</span>
+      <span>Фото: Unsplash · Видео: Pexels</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
